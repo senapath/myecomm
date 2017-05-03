@@ -1,0 +1,23 @@
+{
+  "name": "myecomm",
+  "version": "1.0.0",
+  "description": "This is my new E-Comm app for Sears Holding",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senapath/myecomm.git"
+  },
+  "author": "Sena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senapath/myecomm/issues"
+  },
+  "homepage": "https://github.com/senapath/myecomm#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
