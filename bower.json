@@ -1,0 +1,17 @@
+{
+  "name": "myecomm",
+  "description": "This is my new E-Comm app for Sears Holding",
+  "main": "index.js",
+  "authors": [
+    "Sena"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/senapath/myecomm",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
