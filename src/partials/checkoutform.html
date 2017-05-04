@@ -1,4 +1,43 @@
 <div class="container table-responsive">
-<table class="table table-bordered">
-</table>
+<div class="form-group row">
+  <label for="name" class="col-2 col-form-label">Name</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="Artisanal kale" id="name" ng-model="checkout.name">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="emailid" class="col-2 col-form-label">Email id</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="senapath@gmail.com" id="email" ng-model="checkout.emailid">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="creditcard" class="col-2 col-form-label">Credit Card</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="4237-3747-2238-3352" id="creditcard" ng-model="checkout.creditcard">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="phone" class="col-2 col-form-label">Phone Number</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="4237-3747-2238-3352" id="phone" ng-model="checkout.phone">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="address">Address</label>
+  <textarea class="form-control" id="address" rows="3"></textarea>
+</div>
+
+<div class="form-group row">
+  <label for="zipcode" class="col-2 col-form-label">Zip code</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="654563" id="zipcode" ng-model="checkout.zipcode">
+  </div>
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
 </div>
