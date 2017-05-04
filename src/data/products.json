@@ -1,0 +1,46 @@
+{
+  "products":[{
+                "id":1,
+                "prodname" : "Apple iPhone 6s (Rose Gold, 32 GB)",
+                "price" : 36999,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/g/m/8/apple-iphone-6s-mn122hn-a-original-imaen3f3ubsf8zn3.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              },{
+                "id":2,
+                "prodname" : "SAMSUNG Galaxy On5 (Black, 8 GB)",
+                "price" : 6999,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/c/n/y/samsung-galaxy-on7-sm-g600f-original-imaecqkgfgtmaw2y.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              },{
+                "id":3,
+                "prodname" : "Apple iPhone 6s (Silver, 32 GB)",
+                "price" : 36999,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/h/f/t/apple-iphone-6s-mn0x2hn-a-original-imaen3f3xkgwzmkw.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              },{
+                "id":4,
+                "prodname" : "Lenovo P2 (GREY / GRAPHITE GREY, 32 GB)",
+                "price" : 15990,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/e/7/g/lenovo-p2-p2a42-original-imaepw3wmzkyxvdq.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              },{
+                "id":5,
+                "prodname" : "Apple iPhone 6s (Space Grey, 32 GB)",
+                "price" : 36900,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/6/t/q/apple-iphone-6s-mn0w2hn-a-original-imaen3f3un3jcubq.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              },{
+                "id":6,
+                "prodname" : "Apple iPhone 6s (Silver, 32 GB)",
+                "price" : 36900,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/h/f/t/apple-iphone-6s-mn0x2hn-a-original-imaen3f3xkgwzmkw.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              },{
+                "id":7,
+                "prodname" : "Lenovo P2 (Gold, 32 GB)",
+                "price" : 13400,
+                "imgurl" : "https://rukminim1.flixcart.com/image/312/312/mobile/s/f/n/lenovo-p2-p2a42-original-imaepw3ws2h8gvbz.jpeg?q=70",
+                "desc" : "Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now"
+              }
+            ]
+}

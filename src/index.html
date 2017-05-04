@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" ng-app="myecomm">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store" />
     <title>My E-Commerce Application</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <!-- Including the dependent libraries -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
 </head>
 <body>
+    <!-- Including comming header for all the pages -->
+    <div ng-include src="'partials/navbarheader.html'"></div>
+
+    <!-- Including ng-view for loading all the views based on ng-route-->
+    <div ng-view></div>
+
+    <!-- Including the app.js -->
+    <script src="app.js"></script>
+
+    <!-- Including all services -->
+    <script src="services/allServices.js"></script>
     
+    <!-- Including all controllers -->
+    <script src="controllers/homeCtrl.js"></script>
+    <script src="controllers/checkoutCtrl.js"></script>
+    <script src="controllers/cartCtrl.js"></script>
+
 </body>
 </html>
