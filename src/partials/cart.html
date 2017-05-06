@@ -8,7 +8,6 @@
 		<tr>
 			<th class="text-left">Product Image</th>
 			<th class="text-left">Description</th>
-			<th class="text-left">Quantity</th>
 		</tr>
 		<tr ng-repeat="(key,prod) in cartItems">
 			<td>
@@ -20,10 +19,8 @@
 				<li>Price: {{prod.price}}</li>
 				<li>Desc: {{prod.desc}}</li>
 				</ul>
-			</td>
-			<td>
-				{{prod.qty}}
-			</td>					
+			</td>				
 		</tr>
 	</table>
+	<span class="pull-right"><button src="btn btn-small btn-success" ng-click="checkout()">Proceed to checkout</button></span>
 </div>

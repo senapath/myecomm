@@ -10,6 +10,10 @@ angular.module('myecomm').controller("checkout-ctrl",['$scope','$location','$rou
 		}
 	);
 
+	if($scope.type=="checkout") {
+		$scope.prod = localStorage.getItem("myCart");
+	}
+
 	$scope.submitForm = function() {
 
 			alert("Your Order has been processed successfully");
