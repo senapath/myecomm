@@ -1,43 +1,56 @@
-<div class="container table-responsive">
-<div class="form-group row">
-  <label for="name" class="col-2 col-form-label">Name</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="Artisanal kale" id="name" ng-model="checkout.name">
+<div>
+<div class="container">
+<div class="row">  
+   
+<div class="col-sm-10 well" id="checkoutform">
+    <!-- FORM ============ -->
+  
+    <form name="userForm" ng-submit="submitForm()" novalidate>
+
+        <!-- NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" ng-model="user.name" required placeholder="Please enter name">
+            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
+        
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="user.email" required  placeholder="Please enter Email ID">
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+
+        <!-- PHONE -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine }">
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control" ng-model="user.phone" required  placeholder="Please enter phone number">
+            <p ng-show="userForm.phone.$invalid && !userForm.phone.$pristine" class="help-block">Enter a Phone number.</p>
+        </div>
+      
+        <!-- CREDIT CARD -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.crcard.$invalid && !userForm.crcard.$pristine }">
+            <label>Credit Card</label>
+            <input type="text" name="crcard" class="form-control" ng-model="user.crcard" required ng-minlength="12" ng-maxlength="16" placeholder="Please Enter Credit Card eg: 4444444432343453">
+            <p ng-show="userForm.crcard.$error.minlength" class="help-block">Credit card should minimum 12 characters</p>
+            <p ng-show="userForm.username.$error.maxlength" class="help-block">Credit card maximum 16 characters</p>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.address.$invalid && !userForm.address.$pristine }">
+            <label>Address</label>
+            <textarea class="form-control" name="address" id="address" rows="3" required></textarea>
+            <p ng-show="userForm.address.$invalid && !userForm.address.$pristine" class="help-block">Enter a Address.</p>
+        </div>
+
+        <!-- ZIP CODE -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.zipcode.$invalid && !userForm.zipcode.$pristine }">
+            <label>Zip Code</label>
+            <input type="text" name="zipcode" class="form-control" ng-model="user.zipcode" required ng-minlength="6" placeholder="Please Enter Zipcode">
+            <p ng-show="userForm.zipcode.$invalid && !userForm.zipcode.$pristine" class="help-block">Enter a Zipcode</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+        
+    </form>
   </div>
-</div>
-
-<div class="form-group row">
-  <label for="emailid" class="col-2 col-form-label">Email id</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="senapath@gmail.com" id="email" ng-model="checkout.emailid">
-  </div>
-</div>
-
-<div class="form-group row">
-  <label for="creditcard" class="col-2 col-form-label">Credit Card</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="4237-3747-2238-3352" id="creditcard" ng-model="checkout.creditcard">
-  </div>
-</div>
-
-<div class="form-group row">
-  <label for="phone" class="col-2 col-form-label">Phone Number</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="4237-3747-2238-3352" id="phone" ng-model="checkout.phone">
-  </div>
-</div>
-
-<div class="form-group row">
-  <label for="address">Address</label>
-  <textarea class="form-control" id="address" rows="3"></textarea>
-</div>
-
-<div class="form-group row">
-  <label for="zipcode" class="col-2 col-form-label">Zip code</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="654563" id="zipcode" ng-model="checkout.zipcode">
-  </div>
-</div>
-
-<button type="submit" class="btn btn-primary">Submit</button>
-</div>

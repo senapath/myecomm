@@ -1,1 +1,29 @@
-cart page
+<div class="alert alert-danger text-center"  ng-show="!cartItems.length">
+	No Items in the cart
+</div>
+
+
+<div class="table-responsive proddisp" ng-show="cartItems.length">
+	<table class="table">
+		<tr>
+			<th class="text-left">Product Image</th>
+			<th class="text-left">Description</th>
+			<th class="text-left">Quantity</th>
+		</tr>
+		<tr ng-repeat="(key,prod) in cartItems">
+			<td>
+				<img ng-src="{{prod.imgurl}}" width="100px" height="150px">
+			</td>
+			<td>
+				<ul>
+				<li>Name: {{prod.prodname}}</li>
+				<li>Price: {{prod.price}}</li>
+				<li>Desc: {{prod.desc}}</li>
+				</ul>
+			</td>
+			<td>
+				{{prod.qty}}
+			</td>					
+		</tr>
+	</table>
+</div>

@@ -5,3 +5,19 @@
 .proddisp li {
  list-style-type: none;
  }
+
+#checkoutform {
+	width:500px;
+}
+
+#checkoutform input {
+	width:450px;
+}
+
+#checkoutform textarea {
+	width:450px;	
+}
+
+#checkoutform label {
+	width:450px;	
+}

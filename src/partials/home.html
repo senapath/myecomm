@@ -2,12 +2,10 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="jumbotron">
-			<form class="form-inline">
 			    <div class="form-group">
 			    	<h4>Search by product name, price or description</h4>
-			        <input type="email" class="form-control input-lg search" id="inputSearch" placeholder="eg: Micromax, Samsung..." ng-model="searchtx">
+			        <input type="text" ng-model="searchtx" class="form-control input-lg search" id="inputSearch" placeholder="eg: Micromax, Samsung..." >
 			    </div>		    
-			</form>
 			</div>
 			<div class="table-responsive proddisp">
 			<table class="table">
@@ -17,7 +15,7 @@
 					<th class="text-left">Add to Cart</th>
 					<th class="text-left">Buy Now</th>
 				</tr>
-				<tr ng-repeat="prod in products | filter: searchtx">
+				<tr ng-repeat="prod in products | filter:searchtx">
 					<td>
 						<img ng-src="{{prod.imgurl}}" width="100px" height="150px">
 					</td>
@@ -29,7 +27,7 @@
 						</ul>
 					</td>					
 					<td>
-						<button class="btn btn-small btn-success">Add to Cart</button>
+						<button class="btn btn-small btn-success" ng-click="addProduct($index)" >Add to Cart</button>
 					</td>
 					<td>
 						<button class="btn btn-small btn-success" ng-click="buynow($index)">Buy Now</button>
@@ -37,5 +35,6 @@
 				</tr>
 			</table>
 			</div>
+	</div>
 	</div>
 </div>
